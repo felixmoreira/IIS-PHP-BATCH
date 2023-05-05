@@ -40,4 +40,4 @@ Em resumo, o código cria duas pastas dentro da unidade Z:, coleta informações
 
   12 - Aguarde alguns minutos para que a nova configuração da política de grupo seja replicada em todos os controladores de domínio.
 
-Agora, sempre que um usuário fizer login em uma estação de trabalho que pertence ao domínio, o script será executado automaticamente. Observe que o script deve ser projetado para ser executado em um contexto de usuário e não de sistema, pois ele será executado como o usuário que está fazendo login.
+Agora, sempre que um usuário fizer login em uma estação de trabalho que pertence ao domínio, o script será executado automaticamente.
