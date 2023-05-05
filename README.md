@@ -1,7 +1,7 @@
 # IIS-PHP-BATCH
 Sistema web local que tem como objetivo receber informações das máquinas clientes de um servidor de domínio, com o intuito de fornecer subsídios para análises do setor de tecnologia da informação.
 
-#Arquivo boot.bat
+# Arquivo boot.bat
 A primeira linha de código "net use Z: \127.0.0.0\pc$" está mapeando a unidade Z: para uma pasta compartilhada no computador local. Nesse caso, o endereço IP usado é 127.0.0.0 e o nome da pasta compartilhada é "pc$". O sinal de dólar ($) no final do nome da pasta indica que ela é uma pasta oculta compartilhada apenas para fins administrativos.
 
 As duas linhas seguintes criam duas pastas dentro da unidade Z:, uma chamada "historico" e outra chamada com a data atual formatada com barras (/) substituídas por hífens (-), usando o comando "mkdir". Essas pastas serão usadas para armazenar os arquivos de texto gerados posteriormente.
