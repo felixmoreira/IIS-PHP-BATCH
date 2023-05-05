@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    background: none;
+    text-decoration: none;
+}
+body{
+    background: rgba(0, 0, 0, 0.1);
+    margin: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+button{
+    cursor: pointer;
+    margin: 2px 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #505050;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+}
+button:hover{
+    filter: opacity(70%);
+}
+input{
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+th{
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.9);
+}
+tr:hover{
+    background: rgba(0, 0, 0, 0.1)
+}
+tr{
+    background: #ffffff;
+    cursor: pointer;
+}
+td{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 5px;
+}
+
+table{
+    color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    font-size: 12px;
+}
+.bt01{
+    cursor: pointer;
+    margin: 2px 5px;
+    padding: 15px;
+    border-radius: 5px;
+    color: #505050;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+}
