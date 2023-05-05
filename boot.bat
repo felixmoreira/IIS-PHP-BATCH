@@ -1,4 +1,4 @@
-net use Z: \\172.16.2.5\pc$
+net use Z: \\127.0.0.0\pc$
 mkdir "Z:historico"
 mkdir "Z:historico\%DATE:/=-%"
 systeminfo > "Z:historico\%DATE:/=-%\%USERNAME%.txt"
