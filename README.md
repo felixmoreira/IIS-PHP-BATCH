@@ -61,7 +61,7 @@ Primeiro, a função converte a string de data em um carimbo de tempo (timestamp
 
 Depois disso, a função usa uma declaração switch para comparar o valor de $dia_da_semana com cada um dos sete dias da semana, e retorna uma string contendo o nome do dia da semana correspondente.
 
-Por exemplo, se a data fornecida como argumento for um sábado, a função retornará a string '(sábado)'. Note que a função também inclui as tags HTML "<h2>" para exibir o nome do dia em um cabeçalho de segundo nível.
+Por exemplo, se a data fornecida como argumento for um sábado, a função retornará a string '(sábado)'. Note que a função também inclui as tags HTML "h2" para exibir o nome do dia em um cabeçalho de segundo nível.
 
 
 # Arquivo (script.php) function json
