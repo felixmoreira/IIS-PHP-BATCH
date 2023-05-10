@@ -1,16 +1,20 @@
 # IIS-PHP-BATCH
 Sistema web local que tem como objetivo receber informações das máquinas clientes de um servidor de domínio, com o intuito de fornecer subsídios para análises do setor de tecnologia da informação.
 
+Por segurança foi borado dados sensíveis como, nome de usuário  e ip.
+# Pagina Web Inicial - topo
 <div style="text-align: center; width: 100%;">
-    <img src="https://user-images.githubusercontent.com/109150158/237402515-9434c17e-4dc5-4d24-afa8-54c96aafb7db.png" width="80%">
+    <img src="https://user-images.githubusercontent.com/109150158/237402515-9434c17e-4dc5-4d24-afa8-54c96aafb7db.png" width="100%">
 </div>
 
+# Pagina Web Inicial - final
 <div style="text-align: center; width: 100%;">
-    <img src="https://user-images.githubusercontent.com/109150158/237402665-d6ea8bce-5338-45b8-bae8-7891ebc00ae6.png" width="80%">
+    <img src="https://user-images.githubusercontent.com/109150158/237402665-d6ea8bce-5338-45b8-bae8-7891ebc00ae6.png" width="100%">
 </div>
 
+# Pagina Web Tudo - final
 <div style="text-align: center; width: 100%;">
-    <img src="https://user-images.githubusercontent.com/109150158/237402762-6c062e59-7496-465a-84d7-bebc7c702bad.png" width="80%">
+    <img src="https://user-images.githubusercontent.com/109150158/237402762-6c062e59-7496-465a-84d7-bebc7c702bad.png" width="100%">
 </div>
 
 # Arquivo (boot.bat)
