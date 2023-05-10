@@ -1,6 +1,17 @@
 # IIS-PHP-BATCH
 Sistema web local que tem como objetivo receber informações das máquinas clientes de um servidor de domínio, com o intuito de fornecer subsídios para análises do setor de tecnologia da informação.
 
+<div style="text-align: center; width: 100%;">
+    <img src="https://user-images.githubusercontent.com/109150158/237402515-9434c17e-4dc5-4d24-afa8-54c96aafb7db.png" width="80%">
+</div>
+
+<div style="text-align: center; width: 100%;">
+    <img src="https://user-images.githubusercontent.com/109150158/237402665-d6ea8bce-5338-45b8-bae8-7891ebc00ae6.png" width="80%">
+</div>
+
+<div style="text-align: center; width: 100%;">
+    <img src="https://user-images.githubusercontent.com/109150158/237402762-6c062e59-7496-465a-84d7-bebc7c702bad.png" width="80%">
+</div>
 
 # Arquivo (boot.bat)
 A primeira linha de código "net use Z: \127.0.0.0\cliente$" está mapeando a unidade Z: para uma pasta compartilhada no computador local. Nesse caso, o endereço IP usado é 127.0.0.0 e o nome da pasta compartilhada é "cliente$". O sinal de dólar ($) no final do nome da pasta indica que ela é uma pasta oculta compartilhada apenas para fins administrativos.
