@@ -6,16 +6,19 @@ Por segurança foi borado dados sensíveis como, nome de usuário  e ip.
 <div style="text-align: center; width: 100%;">
     <img src="https://user-images.githubusercontent.com/109150158/237402515-9434c17e-4dc5-4d24-afa8-54c96aafb7db.png" width="100%">
 </div>
+A página inicial exibirá sempre os usuários que fizeram logout no dia atual, indicando a data e hora. Há também a opção de selecionar uma data diferente utilizando o campo de entrada de data logo abaixo.
 
 # Pagina Web Inicial - final
 <div style="text-align: center; width: 100%;">
     <img src="https://user-images.githubusercontent.com/109150158/237402665-d6ea8bce-5338-45b8-bae8-7891ebc00ae6.png" width="100%">
 </div>
+No final da página, há um botão 'Gerar JSON'. Ao clicar neste botão, uma nova página será aberta com os dados em formato JSON para manipulações futuras.
 
 # Pagina Web Tudo - final
 <div style="text-align: center; width: 100%;">
     <img src="https://user-images.githubusercontent.com/109150158/237402762-6c062e59-7496-465a-84d7-bebc7c702bad.png" width="100%">
 </div>
+Na página, serão exibidas todas as datas disponíveis com informações. Ao clicar em uma data, as informações correspondentes serão abertas.
 
 # Arquivo (boot.bat)
 A primeira linha de código "net use Z: \127.0.0.0\cliente$" está mapeando a unidade Z: para uma pasta compartilhada no computador local. Nesse caso, o endereço IP usado é 127.0.0.0 e o nome da pasta compartilhada é "cliente$". O sinal de dólar ($) no final do nome da pasta indica que ela é uma pasta oculta compartilhada apenas para fins administrativos.
