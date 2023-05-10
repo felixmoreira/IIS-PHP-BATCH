@@ -20,6 +20,8 @@ No final da página, há um botão 'Gerar JSON'. Ao clicar neste botão, uma nov
 </div>
 Na página, serão exibidas todas as datas disponíveis com informações. Ao clicar em uma data, as informações correspondentes serão abertas.
 
+## Explicação dos arquivos de código e funcionamento.
+
 # Arquivo (boot.bat)
 A primeira linha de código "net use Z: \127.0.0.0\cliente$" está mapeando a unidade Z: para uma pasta compartilhada no computador local. Nesse caso, o endereço IP usado é 127.0.0.0 e o nome da pasta compartilhada é "cliente$". O sinal de dólar ($) no final do nome da pasta indica que ela é uma pasta oculta compartilhada apenas para fins administrativos.
 
