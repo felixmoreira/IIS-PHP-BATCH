@@ -1,28 +1,29 @@
 # IIS-PHP-BATCH
 Sistema web local que tem como objetivo receber informações das máquinas clientes de um servidor de domínio, com o intuito de fornecer subsídios para análises do setor de tecnologia da informação.
 
+# Apresentação
 Por segurança foi borado dados sensíveis como, nome de usuário  e ip.
-# Pagina Web Inicial - topo
+## Pagina Web Inicial - topo
 <div style="text-align: center; width: 100%;">
     <img src="https://user-images.githubusercontent.com/109150158/237402515-9434c17e-4dc5-4d24-afa8-54c96aafb7db.png" width="100%">
 </div>
 A página inicial exibirá sempre os usuários que fizeram logout no dia atual, indicando a data e hora. Há também a opção de selecionar uma data diferente utilizando o campo de entrada de data logo abaixo.
 
-# Pagina Web Inicial - final
+## Pagina Web Inicial - final
 <div style="text-align: center; width: 100%;">
     <img src="https://user-images.githubusercontent.com/109150158/237402665-d6ea8bce-5338-45b8-bae8-7891ebc00ae6.png" width="100%">
 </div>
 No final da página, há um botão 'Gerar JSON'. Ao clicar neste botão, uma nova página será aberta com os dados em formato JSON para manipulações futuras.
 
-# Pagina Web Tudo - final
+## Pagina Web Tudo - final
 <div style="text-align: center; width: 100%;">
     <img src="https://user-images.githubusercontent.com/109150158/237402762-6c062e59-7496-465a-84d7-bebc7c702bad.png" width="100%">
 </div>
 Na página, serão exibidas todas as datas disponíveis com informações. Ao clicar em uma data, as informações correspondentes serão abertas.
 
-## Explicação dos arquivos de código e funcionamento.
+# Explicação dos arquivos de código e funcionamento.
 
-# Arquivo (boot.bat)
+## Arquivo (boot.bat)
 A primeira linha de código "net use Z: \127.0.0.0\cliente$" está mapeando a unidade Z: para uma pasta compartilhada no computador local. Nesse caso, o endereço IP usado é 127.0.0.0 e o nome da pasta compartilhada é "cliente$". O sinal de dólar ($) no final do nome da pasta indica que ela é uma pasta oculta compartilhada apenas para fins administrativos.
 
 As duas linhas seguintes criam duas pastas dentro da unidade Z:, uma chamada "historico" e outra chamada com a data atual formatada com barras (/) substituídas por hífens (-), usando o comando "mkdir". Essas pastas serão usadas para armazenar os arquivos de texto gerados posteriormente.
@@ -35,7 +36,7 @@ Por fim, a última linha de código usa o comando "net use Z: /delete" para desc
 
 Em resumo, o código cria duas pastas dentro da unidade Z:, coleta informações sobre o sistema e as configurações de rede do usuário atual e salva os resultados em arquivos de texto com nomes específicos dentro das pastas criadas anteriormente. Depois, ele desconecta a unidade Z: do compartilhamento da pasta oculta do computador local.
 
-# Configuração no servidor do Dominio (GPO)
+## Configuração no servidor do Dominio (GPO)
   1 - Crie o script que você deseja executar. Certifique-se de que ele está localizado em um local acessível pelos usuários, como um compartilhamento de rede.
 
   2 - Abra o Console de Gerenciamento de Política de Grupo (Group Policy Management Console - GPMC) no servidor de domínio.
@@ -63,7 +64,7 @@ Em resumo, o código cria duas pastas dentro da unidade Z:, coleta informações
 Agora, sempre que um usuário fizer login em uma estação de trabalho que pertence ao domínio, o script será executado automaticamente.
 
 
-# Arquivo (script.php) function entradaDadosTXT
+## Arquivo (script.php) function entradaDadosTXT
 
 Esta é uma função recebe como entrada o link de um arquivo de texto (.txt) contendo informações sobre um sistema operacional e extrai algumas informações específicas desse arquivo.
 
@@ -75,7 +76,7 @@ As informações relevantes que a função procura no arquivo de texto são: nom
 Finalmente, a função retorna uma string formatada em HTML contendo as informações extraídas. Esta string é usada para preencher uma tabela em uma página da web.
 
 
-# Arquivo (script.php) function dia_da_semana
+## Arquivo (script.php) function dia_da_semana
 Essa função recebe uma data como argumento e retorna o dia da semana correspondente a essa data.
 Primeiro, a função converte a string de data em um carimbo de tempo (timestamp) usando a função strtotime(). Em seguida, usa a função date() para obter o dia da semana correspondente ao carimbo de tempo e armazená-lo na variável $dia_da_semana.
 
@@ -84,7 +85,7 @@ Depois disso, a função usa uma declaração switch para comparar o valor de $d
 Por exemplo, se a data fornecida como argumento for um sábado, a função retornará a string '(sábado)'. Note que a função também inclui as tags HTML "h2" para exibir o nome do dia em um cabeçalho de segundo nível.
 
 
-# Arquivo (script.php) function json
+## Arquivo (script.php) function json
 
 Essa função chamada "json" tem o objetivo de ler e processar um arquivo de texto e retornar um objeto JSON. A função recebe um parâmetro "link", que é o caminho para o arquivo de texto a ser lido.
 
@@ -95,7 +96,7 @@ Depois disso, cada linha do arquivo de texto é processada em um loop "foreach" 
 Finalmente, um objeto JSON é criado usando as variáveis armazenadas e retornado pela função. As chaves do objeto JSON incluem "data", "hora", "usuario", "nome_host", "sistema_op", "user_registro", "fabricante", "modelo", "ram", "dominio", "servidor" e "totalrede". O valor de cada chave é obtido das variáveis correspondentes que foram preenchidas durante o processamento do arquivo de texto.
 
 
-# Arquivo (index.php) Resumo
+## Arquivo (index.php) Resumo
 
 O código começa incluindo um arquivo chamado "script.php" usando a função "include_once". Em seguida, ele verifica se um valor de data foi passado através do método GET e, se for o caso, mostra um botão para retornar à página inicial.
 
@@ -110,7 +111,7 @@ Depois disso, há uma tabela onde serão exibidas as informações dos computado
 Finalmente, há um botão para gerar um arquivo JSON das informações dos computadores. Quando o usuário clica no botão, o código redireciona o usuário para outra página que gera e exibe o arquivo JSON.
 
 
-# Arquivo (tudo.php) Resumo
+## Arquivo (tudo.php) Resumo
 
 Inicia incluindo um arquivo chamado "script.php" usando a função "include_once". Em seguida, ele exibe um botão para voltar à página inicial.
 
