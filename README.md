@@ -75,3 +75,25 @@ Depois disso, cada linha do arquivo de texto é processada em um loop "foreach" 
 Finalmente, um objeto JSON é criado usando as variáveis armazenadas e retornado pela função. As chaves do objeto JSON incluem "data", "hora", "usuario", "nome_host", "sistema_op", "user_registro", "fabricante", "modelo", "ram", "dominio", "servidor" e "totalrede". O valor de cada chave é obtido das variáveis correspondentes que foram preenchidas durante o processamento do arquivo de texto.
 
 
+# Arquivo (index.php) Resumo
+
+O código começa incluindo um arquivo chamado "script.php" usando a função "include_once". Em seguida, ele verifica se um valor de data foi passado através do método GET e, se for o caso, mostra um botão para retornar à página inicial.
+
+Em seguida, há um botão para ver todos os dados disponíveis, seguido por um formulário onde o usuário pode selecionar uma data específica para visualizar as informações dos computadores.
+
+O código então processa a data selecionada pelo usuário ou, se nenhuma data foi selecionada, a data atual. Em seguida, ele converte a data em um formato que pode ser usado para acessar os dados dos computadores.
+
+Em seguida, ele exibe a data selecionada e o dia da semana correspondente usando uma função chamada "dia_da_semana".
+
+Depois disso, há uma tabela onde serão exibidas as informações dos computadores. O código verifica se há uma pasta para a data selecionada e, se houver, lê o conteúdo da pasta e exibe as informações dos computadores em uma tabela.
+
+Finalmente, há um botão para gerar um arquivo JSON das informações dos computadores. Quando o usuário clica no botão, o código redireciona o usuário para outra página que gera e exibe o arquivo JSON.
+
+# Arquivo (tudo.php) Resumo
+
+
+
+
+
+
+
