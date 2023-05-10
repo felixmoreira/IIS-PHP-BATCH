@@ -89,8 +89,16 @@ Depois disso, há uma tabela onde serão exibidas as informações dos computado
 
 Finalmente, há um botão para gerar um arquivo JSON das informações dos computadores. Quando o usuário clica no botão, o código redireciona o usuário para outra página que gera e exibe o arquivo JSON.
 
+
 # Arquivo (tudo.php) Resumo
 
+Inicia incluindo um arquivo chamado "script.php" usando a função "include_once". Em seguida, ele exibe um botão para voltar à página inicial.
+
+Em seguida, ele define uma variável chamada "pasta" que contém o nome da pasta onde as informações dos computadores estão armazenadas. Em seguida, ele usa a função "dir" para abrir o diretório e percorre todos os arquivos na pasta usando um loop "while".
+
+Para cada arquivo encontrado, o código verifica se não é o arquivo atual (".") ou o diretório pai ("..") e exibe um botão com o nome do arquivo como texto. O link do botão é configurado para adicionar o nome do arquivo como um parâmetro na URL da página principal, para que possa ser usado para visualizar as informações dos computadores para essa data específica.
+
+Finalmente, o loop é encerrado e o diretório é fechado.
 
 
 
