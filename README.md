@@ -122,7 +122,8 @@ Para cada arquivo encontrado, o código verifica se não é o arquivo atual ("."
 Finalmente, o loop é encerrado e o diretório é fechado.
 
 
-
+# Contato do criador
+    GitHub - <a href="[/](https://github.com/felixmoreira)">Felix Moreira</a>
 
 
 
