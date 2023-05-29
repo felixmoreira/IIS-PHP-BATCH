@@ -123,7 +123,12 @@ Finalmente, o loop é encerrado e o diretório é fechado.
 
 
 # Contato do criador
-    GitHub - <a href="[/](https://github.com/felixmoreira)">Felix Moreira</a>
+GitHub - <a href="https://github.com/felixmoreira">
+    felixmoreira
+</a>
+LinkedIn  - <a href="https://www.linkedin.com/in/felixms/">
+    felixms
+</a>
 
 
 
